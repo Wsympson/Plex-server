@@ -1,5 +1,5 @@
 #!/bin/sh
-0 3,16 * * * traktarr --config "/opt/traktarr/config4k.json" movies -t https://trakt.tv/users/devbrian/lists/4k_list?sort=popularity,asc -l 4
-0 5 * * * traktarr --config "/opt/traktarr/config4k.json" shows -t https://trakt.tv/users/a925sw/lists/4k-tv-series?sort=popularity,asc -l 2
-0 7 * * * traktarr --config "/opt/traktarr/config.json" movies -t https://trakt.tv/users/devbrian/lists/4k_list?sort=popularity,asc -l 4
-0 9 * * * traktarr --config "/opt/traktarr/config.json" shows -t https://trakt.tv/users/a925sw/lists/4k-tv-series?sort=popularity,asc -l 2
+30 3,16 * * * sudo PATH='/usr/bin:/bin:/usr/local/bin' traktarr --config "/opt/traktarr/config4k.json" movies -t https://trakt.tv/users/devbrian/lists/4k_list?sort=popularity,asc -l 4
+0 5 * * * sudo PATH='/usr/bin:/bin:/usr/local/bin' traktarr --config "/opt/traktarr/config4k.json" shows -t https://trakt.tv/users/a925sw/lists/4k-tv-series?sort=popularity,asc -l 2
+0 7 * * * sudo PATH='/usr/bin:/bin:/usr/local/bin' traktarr --config "/opt/traktarr/config.json" movies -t https://trakt.tv/users/devbrian/lists/4k_list?sort=popularity,asc -l 4
+0 9 * * * sudo PATH='/usr/bin:/bin:/usr/local/bin' traktarr --config "/opt/traktarr/config.json" shows -t https://trakt.tv/users/a925sw/lists/4k-tv-series?sort=popularity,asc -l 2
